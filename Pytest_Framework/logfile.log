@@ -1,0 +1,11 @@
+2024-06-11 00:37:22,909 :INFO :test_logger :Information Statement
+2024-06-11 00:37:22,910 :WARNING :test_logger :Something is in warning mode
+2024-06-11 00:37:22,910 :ERROR :test_logger :A major error ahs happen
+2024-06-11 00:37:22,911 :CRITICAL :test_logger :Critical issue
+2024-06-11 00:40:37,853 : INFO : test_logger : Information Statement
+2024-06-11 00:40:37,853 : WARNING : test_logger : Something is in warning mode
+2024-06-11 00:40:37,853 : ERROR : test_logger : A major error has happened
+2024-06-11 00:40:37,854 : CRITICAL : test_logger : Critical issue
+2024-06-11 00:51:47,800 :INFO :Pytest_Framework.BaseClass :Nitin
+2024-06-11 00:51:47,800 :INFO :Pytest_Framework.BaseClass :Nitin
+2024-06-11 00:54:11,354 :INFO :Pytest_Framework.BaseClass :data

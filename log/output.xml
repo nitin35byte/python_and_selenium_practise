@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-06-26T13:22:46.889911" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\test.robot">
+<test id="s1-t1" name="tesr data" line="32">
+<kw name="please hhhhhhhh">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T13:22:47.433390" level="INFO">Opening browser 'Chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T13:22:47.433390" elapsed="5.855568"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//*[@aria-label='Myntra']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-06-26T13:22:53.288958" elapsed="0.459505"/>
+</kw>
+<arg>Scroll Element Into View</arg>
+<arg>//*[@aria-label='Myntra']</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-06-26T13:22:53.288958" elapsed="0.459505"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-26T13:22:53.748463" level="INFO">Clicking element '//*[@aria-label='Myntra']'.</msg>
+<arg>//*[@aria-label='Myntra']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T13:22:53.748463" elapsed="0.271795"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-26T13:22:54.027044" level="INFO">Clicking element '//span[text()='Login']'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T13:22:54.027044" elapsed="2.383018"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T13:22:56.410062" level="INFO">Typing text '9999999' into text field '//input[@class='r4vIwl BV+Dqf']'.</msg>
+<arg>${txt}</arg>
+<arg>9999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T13:22:56.410062" elapsed="0.296765"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-26T13:22:56.738345" level="INFO">Current page contains text 'Login'.</msg>
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-26T13:22:56.706827" elapsed="0.031518"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-26T13:22:58.570310" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-26T13:22:58.570310" level="FAIL">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</msg>
+<arg>Please enter valid Email ID/Mobile number</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-06-26T13:22:56.738345" elapsed="1.839967">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</status>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//*[@aria-label='Myntra']</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2024-06-26T13:22:58.578312" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//*[@aria-label='Myntra']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-26T13:22:58.578312" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-26T13:22:58.578312" elapsed="0.007999"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${txt}</arg>
+<arg>${txt_1}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-06-26T13:22:58.586311" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${txt_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-26T13:22:58.586311" elapsed="0.000000"/>
+</kw>
+<kw name="Sc">
+<status status="NOT RUN" start="2024-06-26T13:22:58.586311" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-26T13:22:47.433390" elapsed="11.152921">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-06-26T13:22:47.433390" elapsed="11.152921">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</status>
+</test>
+<status status="FAIL" start="2024-06-26T13:22:46.936786" elapsed="11.649525"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-26T13:22:47.416753" level="ERROR">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\test.robot' on line 3: Importing library 'Collection' failed: ModuleNotFoundError: No module named 'Collection'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1
+  C:\Users\Admin\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib
+  C:\Users\Admin\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>

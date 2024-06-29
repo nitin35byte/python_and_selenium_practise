@@ -1,0 +1,4 @@
+2024-06-11 00:55:14,910 :INFO :test_logger :Information Statement
+2024-06-11 00:55:14,911 :WARNING :test_logger :Something is in warning mode
+2024-06-11 00:55:14,911 :ERROR :test_logger :A major error ahs happen
+2024-06-11 00:55:14,911 :CRITICAL :test_logger :Critical issue

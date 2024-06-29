@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-16T21:40:06.309376" rpa="false" schemaversion="5">
+<suite id="s1" name="Nopro" source="C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\nopro.robot">
+<test id="s1-t1" name="User Should be able to Login Successfully With Valid Cread" line="27">
+<kw name="Login Functionality">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-16T21:40:06.814414" level="INFO">Opening browser 'firefox' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<arg>${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-16T21:40:06.814414" elapsed="16.840098"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-16T21:40:23.659568" level="INFO">${extract_title} = Your store. Login</msg>
+<var>${extract_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-16T21:40:23.654512" elapsed="0.005056"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2024-06-16T21:40:23.664577" level="FAIL">Your store. Login != Welcome, please sign in!</msg>
+<arg>${extract_title}</arg>
+<arg>${expected_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="FAIL" start="2024-06-16T21:40:23.659568" elapsed="0.005009">Your store. Login != Welcome, please sign in!</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${extract_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${input_email}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>admin@yourstore.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${input_password}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${click_login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-16T21:40:06.814414" elapsed="16.854692">Your store. Login != Welcome, please sign in!</status>
+</kw>
+<status status="FAIL" start="2024-06-16T21:40:06.814414" elapsed="16.885083">Your store. Login != Welcome, please sign in!</status>
+</test>
+<status status="FAIL" start="2024-06-16T21:40:06.309376" elapsed="17.747303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Nopro">Nopro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
