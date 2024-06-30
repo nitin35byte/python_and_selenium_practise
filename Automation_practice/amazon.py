@@ -83,7 +83,7 @@ def comparing_product_from_excel():
     # print(f"Extracted items from Amazon cart saved to '{output_file}'.")
 
     ##Compare
-    excel_file_path=r'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\Automation_practice\amazon_cart_items.xlsx'
+    excel_file_path=r'input file path'
     df = pd.read_excel('amazon_cart_items.xlsx')
     excel_item= df['Item Name'].tolist()
     print(f"item in excel:",excel_item)
