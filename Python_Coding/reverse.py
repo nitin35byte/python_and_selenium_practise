@@ -13,4 +13,4 @@ words = string.split()  # Split the string into words
 
 for i in words:
     word = i[0].upper() + i[1:].lower()
-    print(word)
+    print("".join(word))

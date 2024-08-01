@@ -2,5 +2,4 @@ import pytest
 
 from Pytest_Framework.conftest import browser
 
-pytest.mark.usefixtures(browser)
-class hub():
+pytest.mark.usefixtures(parm=['Chrome',['Firefox']])

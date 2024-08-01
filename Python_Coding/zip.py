@@ -33,3 +33,9 @@ def fibb(n):
 
 for i in fibb(10):
     print(i)
+
+
+a = [1,2,3,4,5]
+b = ['a','b','c','d','t']
+for i, j in zip(a,b):
+    print(i , j)

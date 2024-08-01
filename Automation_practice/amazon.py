@@ -99,3 +99,8 @@ def comparing_product_from_excel():
         print("test case fail")
 
 comparing_product_from_excel()
+
+## firs i will read scve
+## then i will conver data to list
+## i have add to card item which i have stored in varibale
+## now will a run a loop anditerate throyugh element
