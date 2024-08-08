@@ -1,0 +1,23 @@
+1. Set Up Git (if not already done)
+    a. git config --global user.name "Your Name"
+    b. git config --global user.email "your.email@example.com"
+
+2. Initialize a Local Git Repository (if not already done)
+    a. cd /path/to/your/project
+    b. git init
+
+3. Add Your Files to the Staging Area
+    a. git add filename1 filename2
+    b. git add .
+
+4. Commit Your Changes
+    git commit -m "Your commit message"
+
+5. Add Remote Repository (if not already added)
+    git remote add origin https://github.com/username/repository.git
+
+6. Push Your Changes to the Remote Repository
+    a. Push to the main branch (often main or master):
+        a. git push origin main
+    b. If you are pushing for the first time or your branch does not exist on the remote repository
+        b. git push -u origin main
