@@ -7,7 +7,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from  selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+# Set up Chrome options for headless mode
+options = webdriver.ChromeOptions()
+options.add_argument("--headless")
+
+# Initialize the WebDriver with headless mode
+driver = webdriver.Chrome(options=options)
 driver.get("https://www.globalsqa.com/demo-site/draganddrop/#Accepted%20Elements")
 driver.find_element(By.ID,"Accepted Elements").click()
 time.sleep(5)

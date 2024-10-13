@@ -1,94 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-06-26T13:22:46.889911" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\test.robot">
-<test id="s1-t1" name="tesr data" line="32">
-<kw name="please hhhhhhhh">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-25T22:22:52.097261" rpa="false" schemaversion="5">
+<suite id="s1" name="Flipkart" source="C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot">
+<test id="s1-t1" name="Add to Cart Product" line="94">
+<kw name="Search Product">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-26T13:22:47.433390" level="INFO">Opening browser 'Chrome' to base url 'https://www.flipkart.com/'.</msg>
+<msg time="2024-08-25T22:22:52.736869" level="INFO">Opening browser 'Chrome' to base url 'https://www.flipkart.com/'.</msg>
 <arg>${url}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-26T13:22:47.433390" elapsed="5.855568"/>
+<status status="PASS" start="2024-08-25T22:22:52.736869" elapsed="6.494540"/>
 </kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>//*[@aria-label='Myntra']</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2024-06-26T13:22:53.288958" elapsed="0.459505"/>
-</kw>
-<arg>Scroll Element Into View</arg>
-<arg>//*[@aria-label='Myntra']</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-06-26T13:22:53.288958" elapsed="0.459505"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-26T13:22:53.748463" level="INFO">Clicking element '//*[@aria-label='Myntra']'.</msg>
-<arg>//*[@aria-label='Myntra']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T13:22:53.748463" elapsed="0.271795"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-26T13:22:54.027044" level="INFO">Clicking element '//span[text()='Login']'.</msg>
-<arg>${login_btn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T13:22:54.027044" elapsed="2.383018"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-25T22:22:59.231409" elapsed="0.315861"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T13:22:56.410062" level="INFO">Typing text '9999999' into text field '//input[@class='r4vIwl BV+Dqf']'.</msg>
-<arg>${txt}</arg>
-<arg>9999999</arg>
+<msg time="2024-08-25T22:22:59.547270" level="INFO">Typing text 'iphone15' into text field '//input[@class='Pke_EE']'.</msg>
+<arg>${serach_box}</arg>
+<arg>iphone15</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T13:22:56.410062" elapsed="0.296765"/>
+<status status="PASS" start="2024-08-25T22:22:59.547270" elapsed="0.533306"/>
 </kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-26T13:22:56.738345" level="INFO">Current page contains text 'Login'.</msg>
-<arg>Login</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-26T13:22:56.706827" elapsed="0.031518"/>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:00.091067" level="INFO">Sending key(s) ('BACKSPACE',) to page.</msg>
+<msg time="2024-08-25T22:23:00.091067" level="INFO">Pressing special key BACKSPACE to browser.</msg>
+<msg time="2024-08-25T22:23:00.091067" level="INFO">Releasing special key BACKSPACE.</msg>
+<arg>${None}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-08-25T22:23:00.080576" elapsed="0.043671"/>
 </kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-26T13:22:58.570310" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-26T13:22:58.570310" level="FAIL">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</msg>
-<arg>Please enter valid Email ID/Mobile number</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2024-06-26T13:22:56.738345" elapsed="1.839967">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-25T22:23:02.127190" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-25T22:23:00.124247" elapsed="2.002943"/>
 </kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<arg>Scroll Element Into View</arg>
-<arg>//*[@aria-label='Myntra']</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="NOT RUN" start="2024-06-26T13:22:58.578312" elapsed="0.000000"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:02.127190" level="INFO">Typing text 'iphone15' into text field '//input[@class='Pke_EE']'.</msg>
+<arg>${serach_box}</arg>
+<arg>iphone15</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-25T22:23:02.127190" elapsed="0.334053"/>
 </kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:02.461243" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-08-25T22:23:02.461243" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-08-25T22:23:02.461243" level="INFO">Releasing special key ENTER.</msg>
+<arg>${None}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-08-25T22:23:02.461243" elapsed="3.003510"/>
+</kw>
+<status status="PASS" start="2024-08-25T22:22:52.736869" elapsed="12.727884"/>
+</kw>
+<kw name="Extract Product">
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>//*[@aria-label='Myntra']</arg>
+<msg time="2024-08-25T22:23:05.472147" level="INFO">Clicking element '//div[@class='col col-7-12']'.</msg>
+<arg>${listed_product}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-26T13:22:58.578312" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-25T22:23:05.472147" elapsed="0.277280"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-08-25T22:23:05.749427" elapsed="0.043984"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-25T22:23:10.794068" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-25T22:23:05.793411" elapsed="5.000657"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<var>${txt}</var>
-<arg>${locator}</arg>
+<msg time="2024-08-25T22:23:10.905111" level="INFO">${deal_text} = Big Saving Days Sale ends in01 hrs : 36 mins : 50 secs</msg>
+<var>${deal_text}</var>
+<arg>${validation}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-26T13:22:58.578312" elapsed="0.007999"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${txt}</arg>
-<arg>${txt_1}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="NOT RUN" start="2024-06-26T13:22:58.586311" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-25T22:23:10.794068" elapsed="0.111043"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${txt_1}</arg>
+<arg>dela of the day is :${deal_text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-06-26T13:22:58.586311" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-25T22:23:10.905111" elapsed="0.000000"/>
 </kw>
-<kw name="Sc">
-<status status="NOT RUN" start="2024-06-26T13:22:58.586311" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-25T22:23:05.464753" elapsed="5.440358"/>
 </kw>
-<status status="FAIL" start="2024-06-26T13:22:47.433390" elapsed="11.152921">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</status>
+<kw name="Add To Card">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:10.920755" level="INFO">Typing text '110059' into text field '//input[@class='AFOXgu']'.</msg>
+<arg>${check_pincode}</arg>
+<arg>110059</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-25T22:23:10.920755" elapsed="0.266447"/>
 </kw>
-<status status="FAIL" start="2024-06-26T13:22:47.433390" elapsed="11.152921">Page should have contained text 'Please enter valid Email ID/Mobile number' but did not.</status>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:11.187202" level="INFO">Clicking element '//span[text()='Check']'.</msg>
+<arg>${check}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-25T22:23:11.187202" elapsed="0.117387"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-25T22:23:14.305028" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-25T22:23:11.304589" elapsed="3.001960"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:14.306549" level="INFO">Clicking element '//button[@class='QqFHMw vslbG+ In9uk2']'.</msg>
+<arg>${add-to_cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-25T22:23:14.306549" elapsed="0.193866"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:14.557551" level="INFO">Current page contains text 'Price details'.</msg>
+<arg>Price details</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-08-25T22:23:14.500415" elapsed="0.057136"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-25T22:23:14.857691" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-25T22:23:14.857691" level="FAIL">InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //div[@class='HRZecL']//div[@class='k9WPjB'])[1] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='HRZecL']//div[@class='k9WPjB'])[1]' is not a valid XPath expression."}
+  (Session info: chrome=127.0.6533.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF734B59642+30946]
+	(No symbol) [0x00007FF734B0E3D9]
+	(No symbol) [0x00007FF734A06FDA]
+	(No symbol) [0x00007FF734A0DA57]
+	(No symbol) [0x00007FF734A0FD31]
+	(No symbol) [0x00007FF734A0FDD0]
+	(No symbol) [0x00007FF734A57F69]
+	(No symbol) [0x00007FF734A5850C]
+	(No symbol) [0x00007FF734A9DCE7]
+	(No symbol) [0x00007FF734A7CAAF]
+	(No symbol) [0x00007FF734A9B041]
+	(No symbol) [0x00007FF734A7C813]
+	(No symbol) [0x00007FF734A4A6E5]
+	(No symbol) [0x00007FF734A4B021]
+	GetHandleVerifier [0x00007FF734C8F84D+1301229]
+	GetHandleVerifier [0x00007FF734C9BDC7+1351783]
+	GetHandleVerifier [0x00007FF734C92A13+1313971]
+	GetHandleVerifier [0x00007FF734B8DD16+245686]
+	(No symbol) [0x00007FF734B1759F]
+	(No symbol) [0x00007FF734B13814]
+	(No symbol) [0x00007FF734B139A2]
+	(No symbol) [0x00007FF734B0A3FF]
+	BaseThreadInitThunk [0x00007FFC46BC7374+20]
+	RtlUserThreadStart [0x00007FFC46F3CC91+33]
+</msg>
+<var>${test_1}</var>
+<arg>${price1item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-08-25T22:23:14.557551" elapsed="0.308146">InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //div[@class='HRZecL']//div[@class='k9WPjB'])[1] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='HRZecL']//div[@class='k9WPjB'])[1]' is not a valid XPath expression."}
+  (Session info: chrome=127.0.6533.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF734B59642+30946]
+	(No symbol) [0x00007FF734B0E3D9]
+	(No symbol) [0x00007FF734A06FDA]
+	(No symbol) [0x00007FF734A0DA57]
+	(No symbol) [0x00007FF734A0FD31]
+	(No symbol) [0x00007FF734A0FDD0]
+	(No symbol) [0x00007FF734A57F69]
+	(No symbol) [0x00007FF734A5850C]
+	(No symbol) [0x00007FF734A9DCE7]
+	(No symbol) [0x00007FF734A7CAAF]
+	(No symbol) [0x00007FF734A9B041]
+	(No symbol) [0x00007FF734A7C813]
+	(No symbol) [0x00007FF734A4A6E5]
+	(No symbol) [0x00007FF734A4B021]
+	GetHandleVerifier [0x00007FF734C8F84D+1301229]
+	GetHandleVerifier [0x00007FF734C9BDC7+1351783]
+	GetHandleVerifier [0x00007FF734C92A13+1313971]
+	GetHandleVerifier [0x00007FF734B8DD16+245686]
+	(No symbol) [0x00007FF734B1759F]
+	(No symbol) [0x00007FF734B13814]
+	(No symbol) [0x00007FF734B139A2]
+	(No symbol) [0x00007FF734B0A3FF]
+	BaseThreadInitThunk [0x00007FFC46BC7374+20]
+	RtlUserThreadStart [0x00007FFC46F3CC91+33]
+</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${test_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.872026" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${test_1}</arg>
+<arg>Price (1 item)</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${price1item_price_1}</var>
+<arg>${price1item_price}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${price1item_price_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${test_2}</var>
+<arg>${price1item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${test_2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${test_1}</arg>
+<arg>Discount</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${Discount_1}</var>
+<arg>${Discount_price}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Discount_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${test_3}</var>
+<arg>${deliverycharges}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${test_3}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${test_3}</arg>
+<arg>Delivery Charges</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${Discount_2}</var>
+<arg>${deliverychargesprice}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Discount_2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${test_4}</var>
+<arg>${total_amount}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${test_4}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.873091" elapsed="0.008003"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${test_4}</arg>
+<arg>Total Amount</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.881094" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${ampunt_1}</var>
+<arg>${amount}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.881094" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${ampunt_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.881094" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${test_5}</var>
+<arg>(//div[@class='IbVNxe'])[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.881094" elapsed="0.002425"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${test_5}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-25T22:23:14.883519" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-25T22:23:10.920755" elapsed="3.963842">InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //div[@class='HRZecL']//div[@class='k9WPjB'])[1] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='HRZecL']//div[@class='k9WPjB'])[1]' is not a valid XPath expression."}
+  (Session info: chrome=127.0.6533.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF734B59642+30946]
+	(No symbol) [0x00007FF734B0E3D9]
+	(No symbol) [0x00007FF734A06FDA]
+	(No symbol) [0x00007FF734A0DA57]
+	(No symbol) [0x00007FF734A0FD31]
+	(No symbol) [0x00007FF734A0FDD0]
+	(No symbol) [0x00007FF734A57F69]
+	(No symbol) [0x00007FF734A5850C]
+	(No symbol) [0x00007FF734A9DCE7]
+	(No symbol) [0x00007FF734A7CAAF]
+	(No symbol) [0x00007FF734A9B041]
+	(No symbol) [0x00007FF734A7C813]
+	(No symbol) [0x00007FF734A4A6E5]
+	(No symbol) [0x00007FF734A4B021]
+	GetHandleVerifier [0x00007FF734C8F84D+1301229]
+	GetHandleVerifier [0x00007FF734C9BDC7+1351783]
+	GetHandleVerifier [0x00007FF734C92A13+1313971]
+	GetHandleVerifier [0x00007FF734B8DD16+245686]
+	(No symbol) [0x00007FF734B1759F]
+	(No symbol) [0x00007FF734B13814]
+	(No symbol) [0x00007FF734B139A2]
+	(No symbol) [0x00007FF734B0A3FF]
+	BaseThreadInitThunk [0x00007FFC46BC7374+20]
+	RtlUserThreadStart [0x00007FFC46F3CC91+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-08-25T22:22:52.721263" elapsed="22.163334">InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //div[@class='HRZecL']//div[@class='k9WPjB'])[1] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='HRZecL']//div[@class='k9WPjB'])[1]' is not a valid XPath expression."}
+  (Session info: chrome=127.0.6533.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF734B59642+30946]
+	(No symbol) [0x00007FF734B0E3D9]
+	(No symbol) [0x00007FF734A06FDA]
+	(No symbol) [0x00007FF734A0DA57]
+	(No symbol) [0x00007FF734A0FD31]
+	(No symbol) [0x00007FF734A0FDD0]
+	(No symbol) [0x00007FF734A57F69]
+	(No symbol) [0x00007FF734A5850C]
+	(No symbol) [0x00007FF734A9DCE7]
+	(No symbol) [0x00007FF734A7CAAF]
+	(No symbol) [0x00007FF734A9B041]
+	(No symbol) [0x00007FF734A7C813]
+	(No symbol) [0x00007FF734A4A6E5]
+	(No symbol) [0x00007FF734A4B021]
+	GetHandleVerifier [0x00007FF734C8F84D+1301229]
+	GetHandleVerifier [0x00007FF734C9BDC7+1351783]
+	GetHandleVerifier [0x00007FF734C92A13+1313971]
+	GetHandleVerifier [0x00007FF734B8DD16+245686]
+	(No symbol) [0x00007FF734B1759F]
+	(No symbol) [0x00007FF734B13814]
+	(No symbol) [0x00007FF734B139A2]
+	(No symbol) [0x00007FF734B0A3FF]
+	BaseThreadInitThunk [0x00007FFC46BC7374+20]
+	RtlUserThreadStart [0x00007FFC46F3CC91+33]
+</status>
 </test>
-<status status="FAIL" start="2024-06-26T13:22:46.936786" elapsed="11.649525"/>
+<status status="FAIL" start="2024-08-25T22:22:52.144142" elapsed="22.741930"/>
 </suite>
 <statistics>
 <total>
@@ -97,22 +368,13 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Flipkart">Flipkart</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-06-26T13:22:47.416753" level="ERROR">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\test.robot' on line 3: Importing library 'Collection' failed: ModuleNotFoundError: No module named 'Collection'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\Admin\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib\robotframework_debug_adapter
-  C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1
-  C:\Users\Admin\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib
-  C:\Users\Admin\AppData\Roaming\JetBrains\PyCharmCE2024.1\plugins\robotframework-intellij\lib\robotframework_ls\vendored
-  C:\Users\Admin\AppData\Local\Programs\Python\Python312\python312.zip
-  C:\Users\Admin\AppData\Local\Programs\Python\Python312\DLLs
-  C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib
-  C:\Users\Admin\AppData\Local\Programs\Python\Python312
-  C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+<msg time="2024-08-25T22:22:52.078623" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 1: Singular section headers like '*** Setting ***' are deprecated. Use plural format like '*** Settings ***' instead.</msg>
+<msg time="2024-08-25T22:22:52.078623" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 7: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-08-25T22:22:52.078623" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 24: Singular section headers like '*** Keyword ***' are deprecated. Use plural format like '*** Keywords ***' instead.</msg>
+<msg time="2024-08-25T22:22:52.078623" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 81: Singular section headers like '*** Test Case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
 </errors>
 </robot>

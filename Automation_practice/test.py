@@ -52,7 +52,7 @@ driver.get("https://www.redbus.in/")
 time.sleep(5)  # Adjust the sleep time if necessary to handle any initial loading or popups
 
 # Click the 'Departure' element to open the date picker
-departure_element = WebDriverWait(driver, 10).until(
+departure_element = WebDriverWait(driver, 10 , poll_frequency=0.5).until(
     EC.element_to_be_clickable((By.XPATH, "//span[text()='Departure']"))
 )
 departure_element.click()
@@ -69,3 +69,5 @@ navigate_to_date(target_month, target_year, target_day)
 
 # Close the browser
 driver.quit()
+
+

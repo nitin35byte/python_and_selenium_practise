@@ -1,0 +1,3 @@
+my name is nitin 
+ i am earning file handling
+todays date is 14-9-2024

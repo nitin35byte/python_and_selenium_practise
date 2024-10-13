@@ -1,64 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-16T21:40:06.309376" rpa="false" schemaversion="5">
-<suite id="s1" name="Nopro" source="C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\nopro.robot">
-<test id="s1-t1" name="User Should be able to Login Successfully With Valid Cread" line="27">
-<kw name="Login Functionality">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-08-25T20:25:58.094551" rpa="false" schemaversion="5">
+<suite id="s1" name="Flipkart" source="C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot">
+<test id="s1-t1" name="Serch product on flipkart" line="19">
+<kw name="Search Product">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-16T21:40:06.814414" level="INFO">Opening browser 'firefox' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
-<arg>${URL}</arg>
+<msg time="2024-08-25T20:25:58.748771" level="INFO">Opening browser 'Chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-16T21:40:06.814414" elapsed="16.840098"/>
-</kw>
-<kw name="Get Title" owner="SeleniumLibrary">
-<msg time="2024-06-16T21:40:23.659568" level="INFO">${extract_title} = Your store. Login</msg>
-<var>${extract_title}</var>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2024-06-16T21:40:23.654512" elapsed="0.005056"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2024-06-16T21:40:23.664577" level="FAIL">Your store. Login != Welcome, please sign in!</msg>
-<arg>${extract_title}</arg>
-<arg>${expected_title}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="FAIL" start="2024-06-16T21:40:23.659568" elapsed="0.005009">Your store. Login != Welcome, please sign in!</status>
+<status status="PASS" start="2024-08-25T20:25:58.748771" elapsed="7.296730"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${extract_title}</arg>
+<msg time="2024-08-25T20:26:06.047499" level="FAIL">Variable '${product_valid}' not found.</msg>
+<arg>${product_valid}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>${input_email}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+<status status="FAIL" start="2024-08-25T20:26:06.045501" elapsed="0.002998">Variable '${product_valid}' not found.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<arg>${input_email}</arg>
-<arg>admin@yourstore.com</arg>
+<arg>${serach_box}</arg>
+<arg>iphone15</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-08-25T20:26:06.048499" elapsed="0.000000"/>
 </kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>${input_password}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${serach_box}</arg>
+<arg>ENTER</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-25T20:26:06.049499" elapsed="0.000998"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${input_password}</arg>
-<arg>admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
+<status status="FAIL" start="2024-08-25T20:25:58.746772" elapsed="7.303725">Variable '${product_valid}' not found.</status>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${click_login_btn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-16T21:40:23.664577" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-06-16T21:40:06.814414" elapsed="16.854692">Your store. Login != Welcome, please sign in!</status>
-</kw>
-<status status="FAIL" start="2024-06-16T21:40:06.814414" elapsed="16.885083">Your store. Login != Welcome, please sign in!</status>
+<status status="FAIL" start="2024-08-25T20:25:58.745771" elapsed="7.313722">Variable '${product_valid}' not found.</status>
 </test>
-<status status="FAIL" start="2024-06-16T21:40:06.309376" elapsed="17.747303"/>
+<status status="FAIL" start="2024-08-25T20:25:58.097549" elapsed="7.968940"/>
 </suite>
 <statistics>
 <total>
@@ -67,9 +41,13 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Nopro">Nopro</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Flipkart">Flipkart</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-08-25T20:25:58.078560" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 1: Singular section headers like '*** Setting ***' are deprecated. Use plural format like '*** Settings ***' instead.</msg>
+<msg time="2024-08-25T20:25:58.078560" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 7: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-08-25T20:25:58.079559" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 12: Singular section headers like '*** Keyword ***' are deprecated. Use plural format like '*** Keywords ***' instead.</msg>
+<msg time="2024-08-25T20:25:58.079559" level="WARN">Error in file 'C:\Users\Admin\Desktop\Automation\robotframework\pythonProject1\RobotFramework\flipkart.robot' on line 18: Singular section headers like '*** Test Case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
 </errors>
 </robot>
