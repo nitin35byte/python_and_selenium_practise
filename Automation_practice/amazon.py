@@ -50,12 +50,6 @@ def comparing_product_from_excel():
     except Exception as e:
         print(f"An error occurred while navigating to the cart: {e}")
 
-    # try:
-    #     driver.find_element(By.ID,"nav-cart-text-container").click()
-    #     time.sleep(5)
-    # except Exception as e:
-    #     print(f"An error occurred while navigating to the cart: {e}")
-
     try:
         cart_items = []
         product_count=driver.find_element(By.ID,"nav-cart-count")
@@ -73,14 +67,14 @@ def comparing_product_from_excel():
     """
     The method is created to add into excel and save as xlsx in format
     """
-    # output_file = 'amazon_cart_items.xlsx'
-    # # Create a DataFrame from the extracted items
-    # df = pd.DataFrame({'Item Name': cart_items})
-    #
-    # # Export the DataFrame to Excel
-    # df.to_excel(output_file, index=False)
-    #
-    # print(f"Extracted items from Amazon cart saved to '{output_file}'.")
+    output_file = 'amazon_cart_items.xlsx'
+     #Create a DataFrame from the extracted items
+    df = pd.DataFrame({'Item Name': cart_items})
+
+     #Export the DataFrame to Excel
+    df.to_excel(output_file, index=False)
+
+    #print(f"Extracted items from Amazon cart saved to '{output_file}'.")
 
     ##Compare
     excel_file_path=r'input file path'

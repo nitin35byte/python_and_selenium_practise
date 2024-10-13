@@ -34,3 +34,4 @@ confirm_alert_1.send_keys("Nitin")
 confirm_alert_1.accept()
 # Close the browser
 driver.quit()
+

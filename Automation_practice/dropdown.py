@@ -8,10 +8,10 @@ import time
 driver = webdriver.Chrome()
 driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/")
 select=Select(driver.find_element(By.XPATH,"//div[@class='single_tab_div resp-tab-content resp-tab-content-active']//p//select"))
-driver.get_screenshot_as_file("file.png")
-##select.select_by_index(2)
+driver.get_screenshot_as_file("file2.png")
+select.select_by_index(2)
 ##select.select_by_value("Argentina")
 select.select_by_visible_text("Argentina")
-cook=driver.get_cookie()
+cook=driver.get_cookie(select)
 for cookies in cook:
     print(cookies)
