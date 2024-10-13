@@ -27,6 +27,7 @@ all_links=driver.find_elements(By.TAG_NAME,"a")
 for links in all_links:
     print(links.get_attribute("href"))
 
+
 original_window_handle=driver.window_handles[0]
 driver.switch_to.window(original_window_handle)
 print(driver.current_url)

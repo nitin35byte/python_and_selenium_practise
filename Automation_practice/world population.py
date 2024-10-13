@@ -40,16 +40,16 @@ try:
         print(f"Current World Population: {world_population}")
         print(f"Today's Births: {today_births}, Deaths: {today_deaths}, Growth: {today_growth}")
         print(f"This Year's Births: {this_year_births}, Deaths: {this_year_deaths}, Growth: {this_year_growth}")
-        print("-" * 30)  # Separator for clarity
+        print("-" * 30)  # Separator for clarit.y
 
 
-    # Continuous loop to fetch statistics every few seconds
+    # Continuous loop to fetch statistics
+    # except Exception as e:
+    #     print(f"An error occurred: {e}")every few seconds
     while True:
         fetch_world_population()
         time.sleep(20)  # Wait for 20 seconds before fetching again
 
-except Exception as e:
-    print(f"An error occurred: {e}")
 
 finally:
     # Close the WebDriver session

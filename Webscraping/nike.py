@@ -3,28 +3,23 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 
-# Initialize WebDriver
 driver = webdriver.Chrome()
-driver.get("https://www.nike.com/in/w/sale-3yaep")
+driver.get("https://www.nike.com/in/w/sale-shoes-3yaepzy7ok")
 
-# Scroll to the bottom of the page to load all products
 last_height = driver.execute_script('return document.body.scrollHeight')
 while True:
     driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
-    time.sleep(2)  # Adjust sleep time as necessary
+    time.sleep(2)
     new_height = driver.execute_script('return document.body.scrollHeight')
     if new_height == last_height:
         break
     last_height = new_height
 
-# Initialize a list to collect the data
 data = []
 
-# Parse the page source with BeautifulSoup
 soup = BeautifulSoup(driver.page_source, 'lxml')
 product_cards = soup.find_all('div', class_='product-card__body')
 
-# Extract data from each product card
 for product in product_cards:
     try:
         link = product.find('a', class_='product-card__link-overlay').get('href')
@@ -32,7 +27,7 @@ for product in product_cards:
         subtitle = product.find('div', class_="product-card__subtitle").text.strip()
         sale_price = product.find('div', class_="product-price is--current-price css-1ydfahe").text.strip()
         full_price = product.find('div', class_="product-price in__styling is--striked-out css-0")
-        full_price = full_price.text.strip() if full_price else 'N/A'  # Handle missing full price
+        full_price = full_price.text.strip() if full_price else 'N/A'
 
         # Add the data to the list
         data.append({
@@ -51,7 +46,7 @@ for product in product_cards:
 df = pd.DataFrame(data)
 
 # Save the DataFrame to a CSV file
-df.to_csv("Nike_data.csv", index=False)
+df.to_csv("Nike_Shoes_data.csv", index=False)
 
 # Close the WebDriver
 driver.quit()

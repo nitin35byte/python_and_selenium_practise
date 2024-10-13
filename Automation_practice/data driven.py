@@ -16,7 +16,6 @@ mobile_1 = driver.find_element(By.ID, "mobile")
 dob_1 = driver.find_element(By.ID, "dob")
 sub_1 = driver.find_element(By.ID, "subjects")
 file_input = driver.find_element(By.ID, "picture")
-
 # Define checkbox locators (example IDs used, replace with actual IDs)
 checkbox_1 = driver.find_element(By.ID, "gender")  # Example checkbox for "Automation Tester"
 checkbox_2 = driver.find_element(By.XPATH, "//label[text()='Sports']")  # Example checkbox for "Manual Tester"
@@ -27,7 +26,7 @@ def read_data_from_excel(filename):
     workbook = openpyxl.load_workbook(filename)
 
     # Select the active sheet (you can also use sheet names if needed)
-    sheet = workbook.active
+    sheet = workbook['Sheet1']
 
     # Get the number of rows and columns
     row_count = sheet.max_row
@@ -47,7 +46,6 @@ def read_data_from_excel(filename):
         profession_automation = sheet.cell(row=curr_row, column=7).value  # Assume checkbox value is in column 7
         profession_manual = sheet.cell(row=curr_row, column=8).value  # Assume checkbox value is in column 8
 
-        # Convert user_dob to string if it is a datetime object
         if isinstance(user_dob, datetime.datetime):
             user_dob = user_dob.strftime('%Y-%m-%d')  # Format date as needed
 
